@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),guacamoleb)
+ifeq ($(TARGET_DEVICE),OP4A89)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
