@@ -24,9 +24,9 @@ fi
 set -e
 
 # Required!
-export DEVICE=guacamoleb
+export DEVICE=OP4A89
 export DEVICE_COMMON=sm8150-common
-export VENDOR=oneplus
+export VENDOR=oppo
 
 export DEVICE_BRINGUP_YEAR=2019
 
