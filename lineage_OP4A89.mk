@@ -9,31 +9,31 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from guacamoleb device
-$(call inherit-product, device/oneplus/guacamoleb/device.mk)
+$(call inherit-product, device/oppo/OP4A89/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_guacamoleb
-PRODUCT_DEVICE := guacamoleb
-PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := OnePlus 7
-PRODUCT_MANUFACTURER := OnePlus
+PRODUCT_NAME := lineage_OP4A89
+PRODUCT_DEVICE := OP4A89
+PRODUCT_BRAND := OPPO
+PRODUCT_MODEL := OPPO Reno Ace
+PRODUCT_MANUFACTURER := OPPO
 
 PRODUCT_AAPT_CONFIG := xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2240
+TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Build info
-BUILD_FINGERPRINT := "OnePlus/OnePlus7/OnePlus7:10/QKQ1.190716.003/2003131900:user/release-keys"
+BUILD_FINGERPRINT := "OPPO/PCLM10/OP4A89:10/QKQ1.191021.002/1587105942:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=OnePlus7 \
-    PRODUCT_NAME=OnePlus7 \
-    PRIVATE_BUILD_DESC="OnePlus7-user 10 QKQ1.190716.003 2003131900 release-keys"
+    PRODUCT_DEVICE=OP4A89 \
+    PRODUCT_NAME=PCLM10 \
+    PRIVATE_BUILD_DESC="PCLM10-user 10 QKQ1.191021.002 1590288278 release-keys"
 
-PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+PRODUCT_GMS_CLIENTID_BASE := android-oppo
